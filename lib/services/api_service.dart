@@ -4,9 +4,8 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 class ApiService {
   //static const String baseUrl = "http://10.0.2.2:8000/api"; // Android Emulator
-  static const String baseUrl =
-      "http://192.168.1.115:8000/api"; // Address IP de ma machine
-
+  //static const String baseUrl = "http://192.168.1.115:8000/api"; // Address IP de ma machine
+  static const String baseUrl = "https://45a161640bc1.ngrok-free.app/api"; // Address IP de ma machine";
   /// GET request
   static Future<dynamic> get(String endpoint) async {
     final token = await _getToken();
